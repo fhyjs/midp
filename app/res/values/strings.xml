@@ -12,4 +12,6 @@
     <string name="menu_slideshow">Slideshow</string>
     <string name="gdx_exit">A gdx instance exit</string>
     <string name="record">record</string>
+    <string name="Ffile">from file</string>
+    <string name="psettig">Please authorize in the settings</string>
 </resources>

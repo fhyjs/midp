@@ -4,4 +4,6 @@
     <string name="action_settings">设置</string>
     <string name="gdx_exit">gdx退出</string>
     <string name="record">录制</string>
+    <string name="Ffile">从文件</string>
+    <string name="psettig">请在设置中授权</string>
 </resources>

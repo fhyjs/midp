@@ -22,7 +22,11 @@ import com.google.android.material.snackbar.Snackbar;
 import org.eu.hanana.cirno.midp.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements AndroidFragmentApplication.Callbacks {
-
+    public static MainActivity mainActivity;
+    public MainActivity(){
+        super();
+        mainActivity=this;
+    }
     private AppBarConfiguration mAppBarConfiguration;
     Handler handler = new Handler(Looper.getMainLooper());
     private ActivityMainBinding binding;
