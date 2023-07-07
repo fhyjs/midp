@@ -1,8 +1,12 @@
 package org.eu.hanana.cirno.midp;
 
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -11,14 +15,16 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
+import com.badlogic.gdx.backends.android.AndroidFragmentApplication;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
 import org.eu.hanana.cirno.midp.databinding.ActivityMainBinding;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AndroidFragmentApplication.Callbacks {
 
     private AppBarConfiguration mAppBarConfiguration;
+    Handler handler = new Handler(Looper.getMainLooper());
     private ActivityMainBinding binding;
 
     @Override
@@ -61,5 +67,12 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+    @Override
+    public void exit() {
+        show_toast(Resources.getSystem().getString(R.string.gdx_exit));
+    }
+    public void show_toast(String str) {
+        handler.post(() -> Toast.makeText(getApplicationContext(), str, Toast.LENGTH_LONG).show());
     }
 }
