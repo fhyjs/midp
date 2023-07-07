@@ -6,4 +6,20 @@
     <string name="record">录制</string>
     <string name="Ffile">从文件</string>
     <string name="psettig">请在设置中授权</string>
+    <string name="nper">无权限</string>
+    <string name="cfile">选择一个文件</string>
+    <string name="Create">创建</string>
+    <string name="navigation_drawer_open">打开导航栏</string>
+    <string name="navigation_drawer_close">关闭导航栏</string>
+    <string name="nav_header_desc">导航</string>
+    <string name="menu_home">主页</string>
+    <string name="menu_slideshow">jim播放器</string>
+    <string name="InternalStorage">内部存储</string>
+    <string name="Cancel">取消</string>
+    <string name="Select">选择</string>
+    <string name="ChooseDrive">选择驱动器</string>
+    <string name="free">空闲</string>
+    <string name="resname">资源名称</string>
+    <string name="emptyV">空值</string>
+    <string name="stop">停止</string>
 </resources>

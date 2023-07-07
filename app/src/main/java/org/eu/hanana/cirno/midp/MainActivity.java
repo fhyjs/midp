@@ -1,6 +1,5 @@
 package org.eu.hanana.cirno.midp;
 
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -29,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements AndroidFragmentAp
     }
     private AppBarConfiguration mAppBarConfiguration;
     Handler handler = new Handler(Looper.getMainLooper());
-    private ActivityMainBinding binding;
+    public ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements AndroidFragmentAp
     }
     @Override
     public void exit() {
-        show_toast(Resources.getSystem().getString(R.string.gdx_exit));
+        show_toast(MainActivity.mainActivity.getApplicationContext().getString(R.string.gdx_exit));
     }
     public void show_toast(String str) {
         handler.post(() -> Toast.makeText(getApplicationContext(), str, Toast.LENGTH_LONG).show());

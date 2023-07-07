@@ -2,16 +2,27 @@
     <string name="app_name">midp</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title" translatable="false">Cirno</string>
+    <string name="nav_header_subtitle" translatable="false">hanana.eu.org</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_slideshow">jim player</string>
     <string name="gdx_exit">A gdx instance exit</string>
     <string name="record">record</string>
     <string name="Ffile">from file</string>
     <string name="psettig">Please authorize in the settings</string>
+    <string name="nper">no permission!</string>
+    <string name="cfile">choose a file</string>
+    <string name="Create">Create</string>
+    <string name="InternalStorage">Internal Storage</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Select">Select</string>
+    <string name="ChooseDrive">Choose Drive</string>
+    <string name="free">free</string>
+    <string name="resname">res name</string>
+    <string name="emptyV">empty value</string>
+    <string name="stop">stop</string>
 </resources>
